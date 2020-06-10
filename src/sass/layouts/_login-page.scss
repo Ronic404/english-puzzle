@@ -1,0 +1,41 @@
+.login-page {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.login-page__title {
+  @include text(4rem, 1, $text-light, 700);
+  @extend %text-shadow;
+  font-family: 'Cinzel Decorative', cursive;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.form-block {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 500px;
+  background-color: rgba($color: #fff, $alpha: 0.4);
+  padding: 20px;
+  border-radius: 20px;
+
+  * {
+    width: 100%;
+  }
+}
+
+.registration__title,
+.authorization__title {
+  @include text(3rem, 1, $text-light);
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+input {
+  @include text(2rem, 1.5, $text-dark);
+  margin-bottom: 30px;
+}
